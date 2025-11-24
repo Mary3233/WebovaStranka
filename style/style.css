@@ -14,12 +14,20 @@ mark{
       margin: 20px;
       line-height: 1.6;
   }
-  .section {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-bottom: 40px;
-  }
+.highlight {
+    background: #fffbe6;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid #e08600;
+    margin: 1.5rem auto;
+    max-width: 70ch;
+}
+.highlight cite {
+    display: block;
+    font-style: normal;
+    margin-top: 0.5rem;
+    text-align: right;
+    color: #555;
+}
    .section img {
        width: 400px;
        height: auto;
@@ -30,14 +38,28 @@ mark{
        flex-direction: row-reverse;
    } 
    .section img:hover {
+  header {
+      background:#ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+  }
+  #container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+  nav { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; }
+  nav ul { list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+  nav a { text-decoration:none; padding:.5rem .9rem; border-radius:.4rem; font-weight:600; color:#1a3d5f; }
+  nav a:hover, nav a:focus { background:#1a3d5f; color:#fff; }
        transform: scale(1.5);
    }
 /* Limit paragraph line length */
 main p {
-  max-width: 160ch;    /* ~60 characters per line */
-  line-height: 1.5;
-  margin: 20px;
+    max-width: 120ch;
+    line-height: 1.55;
+    margin: 0 0 1rem;
 }
+figure.photo-group { display:flex; flex-wrap:wrap; gap:1rem; align-items:flex-start; margin:1.5rem 0; }
+figure.photo-group img { width:250px; height:auto; border-radius:8px; }
+figure.photo-group figcaption { flex-basis:100%; font-size:.9rem; color:#444; margin-top:.25rem; }
+footer { text-align:center; padding:2rem 0 3rem; font-size:.85rem; color:#555; }
 
 /* li {
     list-style-type: square;
@@ -57,7 +79,7 @@ li  {
 
     justify-content: center;
     gap:1%;
-} */
+}
 
 /* ol li{
     list-style-type: lower-alpha;

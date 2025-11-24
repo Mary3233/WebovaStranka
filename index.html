@@ -15,13 +15,12 @@
 </head>
 
 <body>
-    <main>
-
+    <header>
         <div id="container">
             <nav>
                 <div id="logo">
                     <a href="index.html" title="Hlavná stránka">
-                        <img class="logo" src="images/Logo/Logo-horizontal.svg" alt="Ja a cestovanie - logo">
+                        <img class="logo" src="Images/Logo/Logo-horizontal.svg" alt="Logo Ja a cestovanie">
                     </a>
                 </div>
 
@@ -30,21 +29,19 @@
                     <li><a href="KALIFORNIA.html">KALIFORNIA</a></li>
                     <li><a href="KANARSKE OSTROVY.html">KANARSKE OSTROVY</a></li>
                     <li><a href="KONTAKT.html">KONTAKT</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <mark>
-            <blockquote>"Nikto z nás odtiaľto nevyviazne živý, tak prestaň byť na seba príliš prísny. Vychutnávaj si
-                skvelé jedlá a nápoje.
-                Prechádzaj sa na slnku, zaplávaj si v mori. Hovor pravdu, ktorú nosiš vo svojom srdci. Buď šialený. Buď
-                milý. Buď
-                vtipný. Buď svoj. Na iné veci nie je čas."
+                </nav>
+            </div>
+        </header>
+        <main>
+            <blockquote class="highlight">Nikto z nás odtiaľto nevyviazne živý, tak prestaň byť na seba príliš prísny. Vychutnávaj si skvelé jedlá a nápoje.
+                Prechádzaj sa na slnku, zaplávaj si v mori. Hovor pravdu, ktorú nosíš vo svojom srdci. Buď šialený. Buď milý. Buď
+                vtipný. Buď svoj. Na iné veci nie je čas.
                 <cite>Richard Gere</cite>
             </blockquote>
-        </mark>
 
-        <mark><q>Jedna kvapka čistej lásky je ušľachtilejšia ako more vedomostí.František z Assisi</q></mark>
+            <blockquote class="highlight">Jedna kvapka čistej lásky je ušľachtilejšia ako more vedomostí.
+                <cite>František z Assisi</cite>
+            </blockquote>
 
         <p><em>Volám sa Maja a cestovanie je pre mňa spôsob ako objavovať svet a zbierať zážitky.</em> Na tejto stránke
             sa s
@@ -52,7 +49,7 @@
             do <strong>USA</strong> a na <strong>Kanárske ostrovy</strong>.</p>
 
         <p>Keď ťa zaujímajú jednotlivé krajiny tak použi interaktívny obrázok alebo linky hore.</p>
-        <img src="images/North_Atlantic_Ocean_laea_location_map.svg.png" alt="Svet" usemap="#worldmap">
+        <img src="Images/North_Atlantic_Ocean_laea_location_map.svg.png" alt="Mapa Atlantiku" usemap="#worldmap">
 
         <map name="worldmap">
             <area shape="rect" coords="15,188,92,263" alt="Texas" href="TEXAS.html">
@@ -60,8 +57,7 @@
             <area shape="circle" coords="450,312,25" alt="Kanarske" href="KANARSKE OSTROVY.html">
             <area shape="circle" coords="563,145,12" alt="kontakt" href="KONTAKT.html">
         </map>
-
-        </nav>
+        
         <h2>Cestovanie po USA</h2>
 
         <p>V USA som bola celkovo 2x, počas týchto ciest som navštívila rôzne mestá a prírodné krásy, ktoré ma
@@ -74,15 +70,12 @@
             <div>San Francisco</div>
         </section>
 
-        <p>
-            <dt>Fotky z USA</dt>
-        </p>
-        <dd>
-            <img src="Images/Las Vegas.jpg" alt="Las Vegas" width="250" height="150">
-            <img src="Images/Uvodna.jpg" alt="Horska USA" width="250" height="150">
-            <img src="Images/Jaskyna.jpg" alt="Grand Canyon" width="250" height="150">
-            Las Vegas,Grand Canyon.
-        </dd>
+        <figure class="photo-group">
+            <img src="Images/Las Vegas.jpg" alt="Nočné mesto Las Vegas" width="250" height="150">
+            <img src="Images/Uvodna.jpg" alt="Horské prostredie v USA" width="250" height="150">
+            <img src="Images/Jaskyna.jpg" alt="Grand Canyon – skalné útvary" width="250" height="150">
+            <figcaption>Zábery z ciest: Las Vegas a Grand Canyon.</figcaption>
+        </figure>
 
 
         <h2>Cestovanie na Kanárske ostrovy</h2>
@@ -92,21 +85,14 @@
             Fuerteventura je známa svojimi dlhými plážami.
             Lanzarote ma očarila svojou vulkanickou krajinou.</p>
 
-        <p>
-            <dt>Fotky z Kanárskych ostrovov</dt>
-        </p>
-        <dd>
-            <img src="Images/Turistika Cofete.jpg" alt="Fuerteventura" width="250" height="150">
-            <img src="Images/Cofete2.jpg" alt="Cofete2" width="250" height="150">
-            Fuerteventura - turistika a pláž Cofete.
-        </dd>
+        <figure class="photo-group">
+            <img src="Images/Turistika Cofete.jpg" alt="Turistika na pláži Cofete, Fuerteventura" width="250" height="150">
+            <img src="Images/Cofete2.jpg" alt="Pláž Cofete – Fuerteventura" width="250" height="150">
+            <figcaption>Fuerteventura – turistika a pláž Cofete.</figcaption>
+        </figure>
 
     </main>
-    <footer>
-        <mark>&copy; 2025 Mária Večerová. Všetky práva vyhradené.</mark>
-    </footer>
-
+    <footer>&copy; 2025 Mária Večerová. Všetky práva vyhradené.</footer>
+    
 </body>
-
-
 </html>
