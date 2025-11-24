@@ -32,6 +32,13 @@ mark{
    .section img:hover {
        transform: scale(1.5);
    }
+/* Limit paragraph line length */
+main p {
+  max-width: 160ch;    /* ~60 characters per line */
+  line-height: 1.5;
+  margin: 20px;
+}
+
 /* li {
     list-style-type: square;
 } */
