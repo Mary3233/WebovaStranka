@@ -54,3 +54,4 @@ li  {
     justify-content: center;
     gap:1%;
 }
+mark { background:#ffe08a; padding:0 .2em; }
