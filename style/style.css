@@ -3,13 +3,16 @@ mark{
     font-style: italic;
     text-decoration: underline;
     background-color: rgb(255, 255, 255);
-}
+    background:#ffe08a;
+    padding:0 .2em; }
+
 .logo{
     width: 500px;
     height: auto;
 }
-  body {
+body {
       background-color: #fafcfc;
+      color: #2b2b4d;
       font-family: Arial, sans-serif;
       margin: 20px;
       line-height: 1.6;
@@ -28,19 +31,36 @@ mark{
     text-align: right;
     color: #555;
 }
-   .section img {
+.section img {
        width: 400px;
        height: auto;
        border-radius: 10px;
        transition: transform 0.3s ease;
-   }
-    .section:nth-child(even) {
+}
+.section:nth-child(even) {
        flex-direction: row-reverse;
-   } 
-   .section img:hover {
+} 
+.section img:hover {
        transform: scale(1.5);
    }
-main p {
+.ram {
+    border: 5px solid #ccc;
+    border-radius: 20px;
+}
+.vonkajsi_okraj {
+    margin: 1rem;
+}
+.obtekanie_vlavo {
+    float: left;
+    margin-left: 15px;
+}
+
+.obtekanie_vpravo {
+    float: right;
+    margin-right: 15px;
+}
+
+p {
     max-width: 120ch;
     line-height: 1.55;
     margin: 0 0 1rem;
@@ -54,4 +74,16 @@ li  {
     justify-content: center;
     gap:1%;
 }
-mark { background:#ffe08a; padding:0 .2em; }
+
+h2 {
+    clear: both;
+}
+#kontakt {
+    scroll-margin-top: 90px;
+    color: #e70619;
+}
+
+.tabulka_fotiek caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}

@@ -61,8 +61,8 @@
         </map>
 
         <aside>
-            Tip: Klikni na označené oblasti v mape alebo použi odkaz
-            <a href="KONTAKT.html#kontakt">Kontakt</a> pre rýchly presun na kontaktné údaje.
+            Tip: Klikni na označené oblasti v mape alebo použi odkaz  
+            <a id="kontakt" href="KONTAKT.html">Kontakt</a> pre rýchly presun na kontaktné údaje.
         </aside>
 
         <h2>Cestovanie po USA</h2>
@@ -77,15 +77,38 @@
             <div>Los Angeles</div>
             <div>San Francisco</div>
         </section>
-        <h3>fotky:</h3>
-        <dl>
-            <dt>Las Vegas</dt>
-            <dd><img src="Images/LasVegas.jpg" alt="Nočné mesto Las Vegas" width="250" height="150"></dd>
-            <dt>Horské prostredie v USA</dt>
-            <dd><img src="Images/Uvodna.jpg" alt="Horské prostredie v USA" width="250" height="150"></dd>
-            <dt>Grand Canyon</dt>
-            <dd><img src="Images/Jaskyna.jpg" alt="Grand Canyon skalné útvary" width="250" height="150"></dd>
-        </dl>
+        
+        <table>
+            <caption>Tabulka fotkiek z USA</caption>
+            <thead>
+                <tr>
+                    <th>Miesto</th>
+                    <th>Obrázok</th>
+                    <th>Popis</th>
+                    <th>Mapa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Las Vegas</td>
+                    <td><img class="ram" src="Images/LasVegas.jpg" alt="Nočné mesto Las Vegas" width="250" height="150"></td>
+                    <td>Nočné mesto Las Vegas</td>
+                    <td><iframe class="ram" title="Mapa Las Vegas" src="https://maps.google.com/maps?q=Las%20Vegas&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+                <tr>
+                    <td>Horské prostredie v USA</td>
+                    <td><img class="ram" src="Images/Uvodna.jpg" alt="Horské prostredie v USA" width="250" height="150"></td>
+                    <td>Horské prostredie v USA</td>
+                    <td><iframe class="ram" title="Mapa Rocky Mountains" src="https://maps.google.com/maps?q=Rocky%20Mountains%20USA&z=6&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+                <tr>
+                    <td>Grand Canyon</td>
+                    <td><img class="ram" src="Images/Jaskyna.jpg" alt="Grand Canyon skalné útvary" width="250" height="150"></td>
+                    <td>Grand Canyon skalné útvary</td>
+                    <td><iframe class="ram" title="Mapa Grand Canyon" src="https://maps.google.com/maps?q=Grand%20Canyon%20National%20Park&z=8&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+            </tbody>
+        </table>
 
 
         <h2>Cestovanie na Kanárske ostrovy</h2>
@@ -97,15 +120,16 @@
 
         <ol>
             <li>
-                <img src="Images/TuristikaCofete.jpg" alt="Turistika na pláži Cofete, Fuerteventura" width="250"
+                <img class="vonkajsi_okraj ram" src="Images/TuristikaCofete.jpg" alt="Turistika na pláži Cofete, Fuerteventura" width="250"
                     height="150">
-                <p>Turistika na pláži Cofete, Fuerteventura</p>
+                    <p class="vonkajsi_okraj">Turistika na pláži Cofete, Fuerteventura</p> 
             </li>
             <li>
-                <img src="Images/Cofete2.jpg" alt="Pláž Cofete Fuerteventura" width="250" height="150">
-                <p>Pláž Cofete Fuerteventura</p>
+                <img class="vonkajsi_okraj ram" src="Images/Cofete2.jpg" alt="Pláž Cofete Fuerteventura" width="250" height="150">
+                <p class="vonkajsi_okraj">Pláž Cofete Fuerteventura</p>
             </li>
         </ol>
+
 
     </main>
     <footer>&copy; 2025 Mária Večerová. Všetky práva vyhradené.</footer>
