@@ -1,17 +1,17 @@
 mark{
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-    background-color: rgb(255, 255, 255);
-    background:#ffe08a;
-    padding:0 .2em; }
+    font-weight: bold;                      //zvyraznenie textu
+    font-style: italic;                     //kurziva
+    text-decoration: underline;             //podciarknutie
+    background:#ffe08a;                     //pozadie zvyrazneneho textu, svetla zlta v 16kovej sustave
+    padding:0 .2em;                         //odsadenie, nastavuje vnutorny okraj
+}                       //odsadenie, nastavuje vnutorny okraj
 
 .logo{
-    width: 500px;
-    height: auto;
+    width: 500px;                           //pevna sirka loga    
+    height: auto;                           //vyska sa automaticky prispôsobí šírke 
 }
 body {
-      background-color: #fafcfc;
+      background-color: #fafcfc;          //svetla farba pozadia
       color: #2b2b4d;
       font-family: Arial, sans-serif;
       margin: 20px;
