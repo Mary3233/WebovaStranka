@@ -1,89 +1,89 @@
 mark{
-    font-weight: bold;                      //zvyraznenie textu
-    font-style: italic;                     //kurziva
-    text-decoration: underline;             //podciarknutie
-    background:#ffe08a;                     //pozadie zvyrazneneho textu, svetla zlta v 16kovej sustave
-    padding:0 .2em;                         //odsadenie, nastavuje vnutorny okraj
-}                       //odsadenie, nastavuje vnutorny okraj
+    font-weight: bold;                      /*zvyraznenie textu */
+    font-style: italic;                     /*kurziva */
+    text-decoration: underline;             /*podciarknutie */
+    background:#ffe08a;                   /*pozadie zvyrazneneho textu, svetla zlta v 16kovej*/
+    padding:0 .2em;                         /*odsadenie, nastavuje vnutorny okraj */
+}                      
 
 .logo{
-    width: 500px;                           //pevna sirka loga    
-    height: auto;                           //vyska sa automaticky prispôsobí šírke 
+    width: 500px;                           /*pevna sirka loga */
+    height: auto;                           /*vyska sa automaticky prispôsobí šírke */
 }
 body {
-      background-color: #fafcfc;          //svetla farba pozadia
-      color: #2b2b4d;
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
+      background-color: #fafcfc;          /*svetla farba pozadia */
+      color: #2b2b4d;                     /*tmava farba textu */
+      font-family: Arial, sans-serif;       /*pouzity font */
+      margin: 20px;                         /* prida vonkajsi okraj okolo celeho obsahu stranky */    
+      line-height: 1.6;                     /*riadkovanie */ 
   }
 .highlight {
-    background: #fffbe6;
-    padding: 0.75rem 1rem;
-    border-left: 4px solid #e08600;
-    margin: 1.5rem auto;
-    max-width: 70ch;
+    background: #fffbe6;                  /*svetla zlta farba pozadia, zvyraznenie */
+    padding: 0.75rem 1rem;                  /*vnutorny okraj*/
+    border-left: 4px solid #e08600;       /*oranzova zvisla ciara na lavej strane, zvyraznuje blok */
+    margin: 1.5rem auto;                    /*vonkajsi okraj, horizontalne centrovanie, rem - relativna velkost, velkost pisma korenoveho elementu */
+    max-width: 70ch;                        /*obmedzuje maximalnu sirku bloku, zlepsuje citatelnost*/
 }
 .highlight cite {
-    display: block;
-    font-style: normal;
-    margin-top: 0.5rem;
-    text-align: right;
-    color: #555;
+    display: block;                         /*citat v samostatnom bloku*/
+    font-style: normal;                     /*normalny styl pisma*/
+    margin-top: 0.5rem;                     /*okraj nad citatom*/
+    text-align: right;                      /*zarovnanie textu doprava*/
+    color: #555;                          /*seda farba textu*/   
 }
 .section img {
-       width: 400px;
-       height: auto;
-       border-radius: 10px;
-       transition: transform 0.3s ease;
+       width: 400px;                        /*pevna sirka obrazkov v sekcii */
+       height: auto;                       /*vyska sa automaticky prispôsobí šírke */
+       border-radius: 10px;                  /*zaoblenie rohov obrazkov */
+       transition: transform 0.3s ease;     /*plynula animacia pri zmene velkosti obrazku */
 }
 .section:nth-child(even) {
-       flex-direction: row-reverse;
+       flex-direction: row-reverse;          /*striedanie poradia obrazku a textu v sekcii */
 } 
+
+.section {
+    overflow: hidden;                         /*zabranenie presahov obsahu sekcie mimo jej hranice */  
+}
+
 .section img:hover {
-       transform: scale(1.5);
+       transform: scale(1.5);                 /*zvacsovanie obrazku pri prejdeni mysou */
    }
 .ram {
-    border: 5px solid #ccc;
-    border-radius: 20px;
+    border: 5px solid #ccc;                  /*seda farba ramiku okolo obrazku */
+    border-radius: 20px;                       /*zaoblenie rohov ramiku */
 }
 .vonkajsi_okraj {
-    margin: 1rem;
+    margin: 1rem;                               /*vonkajsi okraj*/  
 }
 .obtekanie_vlavo {
-    float: left;
-    margin-left: 15px;
+    float: left;                                /*obtekanie obrazku vlavo*/
+    margin-left: 15px;                          /*odsadenie obrazku od laveho okraja textu*/
 }
 
 .obtekanie_vpravo {
-    float: right;
-    margin-right: 15px;
+    float: right;                                /*obtekanie obrazku vpravo*/
+    margin-right: 15px;                          /*odsadenie obrazku od praveho okraja textu*/   
 }
 
 p {
-    max-width: 120ch;
-    line-height: 1.55;
-    margin: 0 0 1rem;
+    max-width: 120ch;                            /*obmedzenie maximalnej sirky odstavca pre lepsiu citatelnost*/
+    line-height: 1.55;                           /*riadkovanie*/
+    margin: 0 0 1rem;                            /*okraj pod odstavcom*/
 }
 li  {
-    list-style-type: none ;
-    display: inline-block;
-    display: inline-flex;
-    padding: 2%;
-
-    justify-content: center;
-    gap:1%;
+    list-style-type: none ;                     /*odstranenie odrazok zo zoznamu*/   
+    display: inline-flex;                       /*zobrazenie poloziek zoznamu vedla seba s flexboxom*/
+    padding: 2%;                                /*vnutorny okraj poloziek zoznamu*/
+    justify-content: center;                    /*zarovnanie obsahu poloziek zoznamu na stred*/
+    gap:1%;                                     /*medzera medzi vnutornymi prvkami zoznamu*/   
 }
 
-h2 {
-    clear: both;
-}
 #kontakt {
-    scroll-margin-top: 90px;
-    color: #e70619;
+    scroll-margin-top: 90px;                    /*odsadenie pri skoku na kotvu, aby nebol nadpis skryty*/ 
+    color: #e70619;                          /*cervena farba textu nadpisu*/
 }
 
 .tabulka_fotiek caption {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-weight: bold;                           /*tučný text v nadpise tabulky*/
+    margin-bottom: 0.5rem;                       /*okraj pod nadpisom tabulky*/
 }
