@@ -7,8 +7,9 @@ mark{
 }                      
 
 .logo{
-    width: 500px;                           /*pevna sirka loga */
-    height: auto;                           /*vyska sa automaticky prispôsobí šírke */
+    width: 50%;
+    height: auto;
+    display: block;                           /*vyska sa automaticky prispôsobí šírke */
 }
 body {
       background-color: #fafcfc;          /*svetla farba pozadia */
