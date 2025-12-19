@@ -7,9 +7,9 @@ mark{
 }                      
 
 .logo{
-    width: 50%;
-    height: auto;
-    display: block;                           /*vyska sa automaticky prispôsobí šírke */
+    width: 50%;                             /*pevna sirka loga */
+    height: auto;                           /**/
+    display: block;                         /*vyska sa automaticky prispôsobí šírke */
 }
 body {
       background-color: #fafcfc;          /*svetla farba pozadia */
@@ -38,9 +38,6 @@ body {
        border-radius: 10px;                  /*zaoblenie rohov obrazkov */
        transition: transform 0.3s ease;     /*plynula animacia pri zmene velkosti obrazku */
 }
-.section:nth-child(even) {
-       flex-direction: row-reverse;          /*striedanie poradia obrazku a textu v sekcii */
-} 
 
 .section {
     overflow: hidden;                         /*zabranenie presahov obsahu sekcie mimo jej hranice */  
@@ -77,6 +74,35 @@ li  {
     padding: 2%;                                /*vnutorny okraj poloziek zoznamu*/
     justify-content: center;                    /*zarovnanie obsahu poloziek zoznamu na stred*/
     gap:1%;                                     /*medzera medzi vnutornymi prvkami zoznamu*/   
+}
+
+/* Navigácia: horizontálne menu len v hlavičke */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header nav li {
+    display: inline-flex;
+    padding: 0;               /* zruší globálne paddingy pre položky v menu */
+    gap: 0;                   /* zruší globálnu medzeru vo vnútri li pre menu */
+    justify-content: initial; /* zruší centrovanie z globálneho pravidla */
+}
+header nav a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 0.375rem;
+}
+header nav a:hover,
+header nav a:focus {
+    background: #eef2f6;
+    outline: none;
 }
 
 #kontakt {
