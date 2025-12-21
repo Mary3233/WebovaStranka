@@ -49,6 +49,8 @@ body {
 .ram {
     border: 5px solid #ccc;                  /*seda farba ramiku okolo obrazku */
     border-radius: 20px;                       /*zaoblenie rohov ramiku */
+    width: 250px;                               /*pevna sirka obrazku v ramiku */
+    height: 150px;                              /*pevna vyska obrazku v ramiku */
 }
 .vonkajsi_okraj {
     margin: 1rem;                               /*vonkajsi okraj*/  
@@ -110,7 +112,7 @@ header nav a:focus {
     color: #e70619;                          /*cervena farba textu nadpisu*/
 }
 
-.tabulka_fotiek caption {
+.table caption {
     font-weight: bold;                           /*tučný text v nadpise tabulky*/
     margin-bottom: 0.5rem;                       /*okraj pod nadpisom tabulky*/
 }
